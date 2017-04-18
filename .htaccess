@@ -1,1 +1,4 @@
-@import "grid";
+Header append Cache-Control "no-store, no-cache, must-revalidate"
+ExpiresActive On ExpiresDefault "now"
+
+AddDefaultCharset UTF8
