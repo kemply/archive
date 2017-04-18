@@ -1,8 +1,70 @@
 #header {
-  background: $blue;
+  background: $black;
+  left: 0;
+  height: 60px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
-  .logo {
-    display: block;
-    text-align: center;
+  .logo .text {
+    color: $white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .navigation {
+    text-align: right;
+
+    .login-link {
+      display: inline-block;
+      margin: 0 16px;
+
+      .text {
+        background: $transparent;
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $white;
+        padding: 8px 16px;
+        transition: .15s background, color;
+
+        @include border-radius(0 50px 50px 0);
+
+        &:hover {
+          background: $white;
+          color: $black;
+        }
+      }
+
+      .sign-up {
+        border-right: none;
+
+        @include border-radius(50px 0 0 50px);
+      }
+
+    }
+
+    .nav {
+      display: inline-block;
+      margin: 0 16px;
+
+      .link {
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 4px;
+        padding: 4px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &.active {
+          color: $white-d30;
+          cursor: default;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

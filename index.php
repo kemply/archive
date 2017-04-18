@@ -2,9 +2,33 @@
   header("Cache-Control: no-store, no-cache, must-revalidate");
   header("Expires: " . date("r"));
 
+  function minify($html){
+    $search = array(
+      '/\>[^\S ]+/s',     // strip whitespaces after tags, except space
+      '/[^\S ]+\</s',     // strip whitespaces before tags, except space
+      '/(\s)+/s',         // shorten multiple whitespace sequences
+      '/<!--(.|\s)*?-->/' // Remove HTML comments
+    );
+
+    $replace = array(
+      '>',
+      '<',
+      '\\1',
+      ''
+    );
+
+    return str_replace('> <', '><', preg_replace($search, $replace, $html));
+  };
+
+  ob_start('minify');
+
+  require 'inc/url.php';
   require 'inc/session.php';
   require 'inc/connect.php';
   require 'inc/user.php';
+
+  if( !$url->get(1) ) header('Location: /guide');
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,6 +45,10 @@
     <?php
       require 'view/header.php';
       require 'view/nav.php';
+
+      require 'inc/content.php';
     ?>
   </body>
 </html>
+
+<?php ob_end_flush(); ?>

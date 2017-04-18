@@ -7,15 +7,17 @@
 
 // Base colors
   $blue   : #31A9B8;
-  $dark   : #000000;
+  $black  : #000000;
   $green  : #258039;
   $red    : #CF3721;
   $yellow : #F5BE41;
   $white  : #FFFFFF;
 
+  $transparent : RGBA(0, 0, 0, 0);
+
 // Lighten to 0.15
   $blue-l15   : lighten(#31A9B8, 0.15);
-  $dark-l15   : lighten(#000000, 0.15);
+  $black-l15  : lighten(#000000, 0.15);
   $green-l15  : lighten(#258039, 0.15);
   $red-l15    : lighten(#CF3721, 0.15);
   $yellow-l15 : lighten(#F5BE41, 0.15);
@@ -23,15 +25,13 @@
 
 // Lighten to 0.30
   $blue-l30   : lighten(#31A9B8, 0.30);
-  $dark-l30   : lighten(#000000, 0.30);
+  $black-l30  : lighten(#000000, 0.30);
   $green-l30  : lighten(#258039, 0.30);
   $red-l30    : lighten(#CF3721, 0.30);
   $yellow-l30 : lighten(#F5BE41, 0.30);
-  $white-l30  : lighten(#FFFFFF, 0.30);
 
 // Darken to 0.15
   $blue-d15   : darken(#31A9B8, 0.15);
-  $dark-d15   : darken(#000000, 0.15);
   $green-d15  : darken(#258039, 0.15);
   $red-d15    : darken(#CF3721, 0.15);
   $yellow-d15 : darken(#F5BE41, 0.15);
@@ -39,7 +39,6 @@
 
 // Darken to 0.30
   $blue-d30   : darken(#31A9B8, 0.30);
-  $dark-d30   : darken(#000000, 0.30);
   $green-d30  : darken(#258039, 0.30);
   $red-d30    : darken(#CF3721, 0.30);
   $yellow-d30 : darken(#F5BE41, 0.30);

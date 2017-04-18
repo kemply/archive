@@ -1,4 +1,9 @@
-Header append Cache-Control "no-store, no-cache, must-revalidate"
-ExpiresActive On ExpiresDefault "now"
-
 AddDefaultCharset UTF8
+
+RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule .* index.php/$0
