@@ -6,6 +6,14 @@
         case 'guide':
           require 'view/guide.php';
         break;
+
+        case 'archive':
+          require 'view/archive.php';
+        break;
+
+        case 'faq':
+          require 'view/faq.php';
+        break;
       }
     else:
 

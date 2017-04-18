@@ -44,26 +44,38 @@
 
     }
 
-    .nav {
+    .lang-dropdown {
+      color: $white;
       display: inline-block;
-      margin: 0 16px;
+      position: relative;
 
-      .link {
-        color: $white;
-        cursor: pointer;
-        display: inline-block;
-        margin: 0 4px;
-        padding: 4px;
+      .options {
+        position: absolute;
+      }
 
-        &:hover {
-          text-decoration: underline;
-        }
+      .lang {
+        display: block;
+      }
+    }
+  }
 
-        &.active {
-          color: $white-d30;
-          cursor: default;
-          text-decoration: none;
-        }
+  .nav {
+
+    .link {
+      color: $white;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 4px;
+      padding: 4px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        color: $white-d30;
+        cursor: default;
+        text-decoration: none;
       }
     }
   }

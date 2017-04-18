@@ -1,12 +1,16 @@
 @import "inc/mixin";
 @import "inc/palette";
 
+$font-family  : "Roboto", sans-serif;
+$font-serif   : "MerriWeather", serif;
+
 #guide {
   background: $white-d15;
   margin-top: 60px;
   width: 100%;
 
   .title {
+    font-family: $font-serif;
     font-size: 28px;
     font-weight: 400;
     margin: 16px 0;
@@ -28,6 +32,7 @@
     .text {
       background: $white-d15;
       display: inline-block;
+      font-family: inherit;
       padding: 0 16px;
       position: relative;
       z-index: 2;
