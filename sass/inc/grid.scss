@@ -9,43 +9,35 @@
   text-decoration: none;
 }
 
-#body {
-  margin: 0 auto;
-  width: 1280px;
-}
-
-#header {
-  padding: 16px 0;
+.content {
+  display: block;
+  padding: 16px 8px;
   width: 100%;
+
+  &.vertical-padding { padding: 16px 0; }
+  &.horizontal-padding { padding: 0 8px; }
+
+  &.justify {
+    text-align: justify;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }
 
-.col-1 {
+.line {
   display: inline-block;
+  vertical-align: middle;
+
+  &.bottom { vertical-align: bottom; }
+  &.top { vertical-align: top; }
+}
+
+.width {
+  margin-left: 0;
+  margin-right: 0;
   width: 320px;
-}
-
-.col-2 {
-  display: inline-block;
-  width: 640px;
-}
-.col-3 {
-  display: inline-block;
-  width: 960px;
-}
-
-.col-4 {
-  display: inline-block;
-  width: 1280px;
-}
-
-.offset-1 {
-  margin-left: 320px;
-}
-
-.offset-2 {
-  margin-left: 640px;
-}
-
-.offset-3 {
-  margin-left: 960px;
 }
