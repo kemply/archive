@@ -4,13 +4,15 @@
 $font-family  : "Roboto", sans-serif;
 $font-serif   : "MerriWeather", serif;
 
-#guide {
+#body {
   background: $white-d15;
-  margin-top: 60px;
-  width: 100%;
+}
+
+#guide {
+  margin: 0 auto 15px auto;
+  width: 1350px;
 
   .title {
-    font-family: $font-serif;
     font-size: 28px;
     font-weight: 400;
     margin: 16px 0;
@@ -36,6 +38,110 @@ $font-serif   : "MerriWeather", serif;
       padding: 0 16px;
       position: relative;
       z-index: 2;
+    }
+  }
+
+  .document {
+    margin-top: 64px;
+
+    .h2 {
+      font-family: $font-serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 16px 0;
+    }
+
+    .h3 {
+      font-family: $font-serif;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 16px 0;
+    }
+
+    .h4 {
+      font-family: $font-serif;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 16px 0;
+    }
+
+    .p {
+      font-family: $font-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 8px 0;
+      &:before {
+        content: '';
+        display: inline;
+        padding: 0 8px;
+      }
+    }
+
+    .italic {
+      font-family: $font-serif;
+      font-style: italic;
+      margin: 16px 0;
+    }
+
+    .center { text-align: center; }
+    .justify { text-align: justify; }
+    .left {
+      text-align: left;
+
+      .span {
+        display: inline-block;
+        width: 60%
+      }
+    }
+    .right {
+      text-align: right;
+
+      .span {
+        display: inline-block;
+        width: 60%
+      }
+    }
+
+    .pages {
+      border-right: 1px solid $white-d30;
+      bottom: 190px;
+      overflow: auto;
+      padding: 16px 16px 16px 0;
+      position: fixed;
+      top: 190px;
+
+      &.absolute {
+        bottom: 20px;
+        position: absolute;
+      }
+
+      &.fixed {
+        position: fixed;
+        top: 20px;
+      }
+
+      .h4 {
+        margin: 0 0 24px 0;
+      }
+
+      .link {
+        color: $black;
+        display: block;
+        margin: 8px 0;
+        text-decoration: underline;
+
+        &.active {
+          color: $black-l30;
+          cursor: default;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .page {
+      margin-bottom: 16px;
+      max-height: 500px;
+      padding: 0 16px;
     }
   }
 }

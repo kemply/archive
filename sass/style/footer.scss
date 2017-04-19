@@ -1,0 +1,40 @@
+#footer {
+  background: $black;
+  padding: 16px 0;
+
+  .nav .link {
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: $black-l30;
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+
+  .copy {
+    color: $white;
+    text-align: center;
+  }
+
+  .autor {
+    color: $white;
+    padding: 0 16px;
+    text-align: right;
+
+    .link {
+      color: $blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

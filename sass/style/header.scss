@@ -1,11 +1,64 @@
 #header {
   background: $black;
-  left: 0;
-  height: 60px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
   width: 100%;
+
+  .lang-dropdown {
+    box-shadow: 0 0 0 $transparent;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    transition: .15s all;
+    vertical-align: middle;
+    width: 120px;
+    z-index: 5;
+
+    .icon {
+      font-size: 14px;
+      color: $white;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      transition: .15s all;
+    }
+
+    .options {
+      background: $transparent;
+      position: absolute;
+      left: 0;
+      max-height: 32px;
+      overflow: hidden;
+      top: -16px;
+      transition: .15s all;
+      width: 100%;
+
+      .lang {
+        color: $white;
+        display: block;
+        font-size: 14px;
+        padding: 8px 16px 8px 28px;
+        transition: .15s all;
+      }
+
+      &:hover {
+        background: $white;
+        box-shadow: 0 0 3px $black-l30;
+        max-height: 160px;
+
+        .icon {
+          color: $black;
+        }
+
+        .lang {
+          color: $black;
+
+          &:hover {
+            background: $white-d15;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 
   .logo .text {
     color: $white;
@@ -42,20 +95,6 @@
         @include border-radius(50px 0 0 50px);
       }
 
-    }
-
-    .lang-dropdown {
-      color: $white;
-      display: inline-block;
-      position: relative;
-
-      .options {
-        position: absolute;
-      }
-
-      .lang {
-        display: block;
-      }
     }
   }
 
