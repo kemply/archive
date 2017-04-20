@@ -9,14 +9,18 @@ $font-serif   : "MerriWeather", serif;
 }
 
 #enquiry {
-  margin-bottom: 30px;
 
   .title {
+    display: block;
     font-size: 28px;
     font-weight: 400;
-    margin: 16px 0;
+    margin: 16px auto;
     position: relative;
     text-align: center;
+
+    &.small {
+      font-size: 24px;
+    }
 
     &:before {
       background: $black;
@@ -41,16 +45,17 @@ $font-serif   : "MerriWeather", serif;
   }
 
   .blocks {
-    padding: 40px;
+    padding: 40px 0;
 
     .card {
-      padding: 16px;
+      padding: 32px;
       vertical-align: top;
     }
 
     .block {
       background: $transparent;
       color: $blue;
+      cursor: pointer;
       display: block;
       height: 100%;
       text-align: center;
@@ -66,7 +71,7 @@ $font-serif   : "MerriWeather", serif;
       color: inherit;
       display: inline-block;
       font-size: 80px;
-      padding: 64px 0 16px 0;
+      padding-top: 52px;
       vertical-align: middle;
     }
 
@@ -75,6 +80,14 @@ $font-serif   : "MerriWeather", serif;
       display: block;
       font-weight: 500;
       font-size: 20px;
+      margin: 0 auto;
+      width: 70%;
     }
   }
+}
+
+#map {
+  display: block;
+  height: 400px;
+  margin: 32px auto 0 auto;
 }
