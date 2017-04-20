@@ -5,12 +5,11 @@ $font-family  : "Roboto", sans-serif;
 $font-serif   : "MerriWeather", serif;
 
 #body {
-  background: $white-d15;
+  background: $white;
 }
 
 #guide {
   margin: 0 auto 15px auto;
-  width: 1350px;
 
   .title {
     font-size: 28px;
@@ -32,7 +31,7 @@ $font-serif   : "MerriWeather", serif;
     }
 
     .text {
-      background: $white-d15;
+      background: $white;
       display: inline-block;
       font-family: inherit;
       padding: 0 16px;
@@ -103,10 +102,12 @@ $font-serif   : "MerriWeather", serif;
     }
 
     .pages {
-      border-right: 1px solid $white-d30;
+      background: $white-d075;
+      border: 1px solid $white-d30;
+      border-right: none;
       bottom: 190px;
       overflow: auto;
-      padding: 16px 16px 16px 0;
+      padding: 16px;
       position: fixed;
       top: 190px;
 
@@ -121,17 +122,19 @@ $font-serif   : "MerriWeather", serif;
       }
 
       .h4 {
-        margin: 0 0 24px 0;
+        margin: 8px 0 32px 0;
       }
 
       .link {
         color: $black;
         display: block;
         margin: 8px 0;
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
 
         &.active {
-          color: $black-l30;
+          color: $blue-d15;
           cursor: default;
           text-decoration: none;
         }

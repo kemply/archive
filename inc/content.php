@@ -11,8 +11,8 @@
           require 'view/archive.php';
         break;
 
-        case 'faq':
-          require 'view/faq.php';
+        case 'enquiry':
+          require 'view/enquiry.php';
         break;
       }
     else:

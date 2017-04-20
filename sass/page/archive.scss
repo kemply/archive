@@ -5,7 +5,7 @@ $font-family  : "Roboto", sans-serif;
 $font-serif   : "MerriWeather", serif;
 
 #body {
-  background: $white-d15;
+  background: $white;
 }
 
 #archive {
@@ -31,7 +31,7 @@ $font-serif   : "MerriWeather", serif;
     }
 
     .text {
-      background: $white-d15;
+      background: $white;
       display: inline-block;
       font-family: inherit;
       padding: 0 16px;
@@ -106,16 +106,16 @@ $font-serif   : "MerriWeather", serif;
   }
 
   .preloader {
-    display: block;
     background: RGBA(0, 0, 0, .5);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    bottom: 0;
     border: none;
-    outline: none;
+    bottom: 1px;
     cursor: progress;
+    display: block;
+    left: 1px;
+    outline: none;
+    position: absolute;
+    top: 1px;
+    width: calc(100% - 2px);
 
     .img {
       width: 250px;

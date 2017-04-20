@@ -270,3 +270,87 @@ $font-serif   : "MerriWeather", serif;
     src: local("Roboto Black"), local("Roboto-Black"), url("/font/Roboto/Cyrilic/Black.woff2") format("woff2");
     unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
   }
+
+
+
+/******************************/
+/*                            */
+/*        Fontastic           */
+/*                            */
+/******************************/
+
+// Icon font
+
+  @font-face {
+    font-family: "fontastic";
+    src:url("/font/fontastic/fontastic.eot");
+    src:url("/font/fontastic/fontastic.eot?#iefix") format("embedded-opentype"),
+    url("/font/fontastic/fontastic.woff") format("woff"),
+    url("/font/fontastic/fontastic.ttf") format("truetype"),
+    url("/font/fontastic/fontastic.svg#fontastic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+// Settings
+
+  [data-icon]:before {
+    font-family: "fontastic" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    font-family: "fontastic" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+// Alphabet
+  .icon {
+    &-add:before             { content: "\6a"; }
+    &-archive:before         { content: "\75"; }
+    &-arrow-down:before      { content: "\6c"; }
+    &-book:before            { content: "\70"; }
+    &-check:before           { content: "\6f"; }
+    &-cog:before             { content: "\72"; }
+    &-document-accept:before { content: "\6e"; }
+    &-done:before            { content: "\6b"; }
+    &-edit:before            { content: "\7a"; }
+    &-eye:before             { content: "\6d"; }
+    &-feedback:before        { content: "\44"; }
+    &-file:before            { content: "\67"; }
+    &-file-media:before      { content: "\79"; }
+    &-file-settings:before   { content: "\76"; }
+    &-files:before           { content: "\71"; }
+    &-globe:before           { content: "\65"; }
+    &-help:before            { content: "\43"; }
+    &-key:before             { content: "\62"; }
+    &-location:before        { content: "\41"; }
+    &-logout:before          { content: "\73"; }
+    &-search:before          { content: "\69"; }
+    &-statistics:before      { content: "\77"; }
+    &-status:before          { content: "\66"; }
+    &-study:before           { content: "\68"; }
+    &-submit:before          { content: "\63"; }
+    &-tachometer:before      { content: "\78"; }
+    &-translate:before       { content: "\42"; }
+    &-user:before            { content: "\61"; }
+    &-users:before           { content: "\74"; }
+    &-vcard:before           { content: "\64"; }
+    &-winrar:before          { content: "\45"; }
+  }

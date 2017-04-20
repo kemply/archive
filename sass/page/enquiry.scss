@@ -1,0 +1,80 @@
+@import "inc/mixin";
+@import "inc/palette";
+
+$font-family  : "Roboto", sans-serif;
+$font-serif   : "MerriWeather", serif;
+
+#body {
+  background: $white;
+}
+
+#enquiry {
+  margin-bottom: 30px;
+
+  .title {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 16px 0;
+    position: relative;
+    text-align: center;
+
+    &:before {
+      background: $black;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: .6em;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .text {
+      background: $white;
+      display: inline-block;
+      font-family: inherit;
+      padding: 0 16px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .blocks {
+    padding: 40px;
+
+    .card {
+      padding: 16px;
+      vertical-align: top;
+    }
+
+    .block {
+      background: $transparent;
+      color: $blue;
+      display: block;
+      height: 100%;
+      text-align: center;
+      transition: .15s background, .6s color;
+
+      &:hover {
+        background: $blue;
+        color: $white;
+      }
+    }
+
+    .icon {
+      color: inherit;
+      display: inline-block;
+      font-size: 80px;
+      padding: 64px 0 16px 0;
+      vertical-align: middle;
+    }
+
+    .name {
+      color: inherit;
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
