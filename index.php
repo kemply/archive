@@ -42,7 +42,7 @@
     <link href="/compiler.php/ui.scss?time=<?php echo (int) microtime(true); ?>" rel="stylesheet" type="text/css" />
     <!-- <link href="//file.myfontastic.com/ABA5yUrw93ntWVEnGgxxn4/icons.css" rel="stylesheet" type="text/css" /> -->
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body id="body">
     <?php

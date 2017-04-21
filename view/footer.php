@@ -5,7 +5,7 @@
       <nav class="nav line col-1">
         <a href="/guide" class="link <?php echo $url->get(1) == 'guide' ? 'active' : false; ?>">Путеводитель</a>
         <a href="/archive" class="link <?php echo $url->get(1) == 'archive' ? 'active' : false; ?>">Архив</a>
-        <a href="/enquiry" class="link <?php echo $url->get(1) == 'enquiry' ? 'active' : false; ?>">Справка</a>
+        <a href="/enquiry" class="link <?php echo $url->get(1) == 'enquiry' && !$url->get(2) ? 'active' : false; ?>">Справка</a>
       </nav>
     </div>
 

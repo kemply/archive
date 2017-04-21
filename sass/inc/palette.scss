@@ -9,6 +9,7 @@
   $blue   : #31A9B8;
   $black  : #000000;
   $green  : #258039;
+  $orange : #DE7A22;
   $red    : #CF3721;
   $yellow : #F5BE41;
   $white  : #FFFFFF;
@@ -19,6 +20,7 @@
   $blue-l075    : lighten(#31A9B8, 0.075);
   $black-l075   : lighten(#000000, 0.075);
   $green-l075   : lighten(#258039, 0.075);
+  $orange-l075  : lighten(#DE7A22, 0.075);
   $red-l075     : lighten(#CF3721, 0.075);
   $yellow-l075  : lighten(#F5BE41, 0.075);
 
@@ -26,6 +28,7 @@
   $blue-l15     : lighten(#31A9B8, 0.15);
   $black-l15    : lighten(#000000, 0.15);
   $green-l15    : lighten(#258039, 0.15);
+  $orange-l15   : lighten(#DE7A22, 0.15);
   $red-l15      : lighten(#CF3721, 0.15);
   $yellow-l15   : lighten(#F5BE41, 0.15);
 
@@ -33,19 +36,22 @@
   $blue-l30     : lighten(#31A9B8, 0.30);
   $black-l30    : lighten(#000000, 0.30);
   $green-l30    : lighten(#258039, 0.30);
+  $orange-l30   : lighten(#DE7A22, 0.30);
   $red-l30      : lighten(#CF3721, 0.30);
   $yellow-l30   : lighten(#F5BE41, 0.30);
 
 // Darken to 0.075
-  $blue-l075    : darken(#31A9B8, 0.075);
-  $green-l075   : darken(#258039, 0.075);
-  $red-l075     : darken(#CF3721, 0.075);
-  $yellow-l075  : darken(#F5BE41, 0.075);
+  $blue-d075    : darken(#31A9B8, 0.075);
+  $green-d075   : darken(#258039, 0.075);
+  $orange-d075  : darken(#DE7A22, 0.075);
+  $red-d075     : darken(#CF3721, 0.075);
+  $yellow-d075  : darken(#F5BE41, 0.075);
   $white-d075   : darken(#FFFFFF, 0.075);
 
 // Darken to 0.15
   $blue-d15     : darken(#31A9B8, 0.15);
   $green-d15    : darken(#258039, 0.15);
+  $orange-d15   : darken(#DE7A22, 0.15);
   $red-d15      : darken(#CF3721, 0.15);
   $yellow-d15   : darken(#F5BE41, 0.15);
   $white-d15    : darken(#FFFFFF, 0.15);
@@ -53,6 +59,7 @@
 // Darken to 0.30
   $blue-d30     : darken(#31A9B8, 0.30);
   $green-d30    : darken(#258039, 0.30);
+  $orange-d30   : darken(#DE7A22, 0.30);
   $red-d30      : darken(#CF3721, 0.30);
   $yellow-d30   : darken(#F5BE41, 0.30);
   $white-d30    : darken(#FFFFFF, 0.30);

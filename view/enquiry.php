@@ -1,50 +1,59 @@
 <link href="/compiler.php/page/enquiry.scss?time=<?php echo (int) microtime(true); ?>" rel="stylesheet" type="text/css" />
 
 <div id="enquiry">
-  <div class="content row">
-    <h1 class="title"><span class="text">Справка</span></h1>
-  </div>
 
-  <div class="blocks row center">
-    <div class="card col-1 row-1">
-      <a href="/help/faq" class="block">
-        <i class="icon icon-help"></i>
-        <span class="name">Часто задаваемые вопросы</span>
-      </a>
-    </div>
 
-    <div class="card col-1 row-1">
-      <a href="/help/faq" class="block">
-        <i class="icon icon-book"></i>
-        <span class="name">Руководство пользователя</span>
-      </a>
-    </div>
+  <?php
+    switch ($url->get(2)){
+      case 'manual':
+        require 'view/enquiry/manual.php';
+      break;
 
-    <div class="card col-1 row-1">
-      <a href="/help/faq" class="block">
-        <i class="icon icon-feedback"></i>
-        <span class="name">Обратная связь</span>
-      </a>
-    </div>
+      case 'faq':
+        require 'view/enquiry/faq.php';
+      break;
 
-    <div class="card col-1 row-1">
-      <a href="/help/faq" class="block">
-        <i class="icon icon-winrar"></i>
-        <span class="name">Информация для владельцев фондов</span>
-      </a>
-    </div>
-  </div>
+      case 'feedback':
+        require 'view/enquiry/feedback.php';
+      break;
+
+      case 'for-owners':
+        require '/view/enquiry/for-owners.php';
+      break;
+
+      default:
+        require 'view/enquiry/default.php';
+      break;
+    }
+  ?>
 
   <div class="content row">
     <h2 class="title small col-3"><span class="text">Конакты</span></h2>
   </div>
 
-  <div class="content row">
+  <div class="row center">
     <div class="col-3">
-      <div class="col-1">
+
+      <div class="contact col-1">
         <span class="key">Адрес:</span>
         <span class="value">Арай 53, Левый берег, г. Астана</span>
       </div>
+
+      <div class="contact col-1 offset-1">
+        <span class="key">Сайт:</span>
+        <a href="http://factor.kz" class="value link" target="_blank">factor.kz</a>
+      </div>
+
+      <div class="contact col-1">
+        <span class="key">Телефон:</span>
+        <span class="value">+7 777 123 4567</span>
+      </div>
+
+      <div class="contact col-1 offset-1">
+        <span class="key">Email:</span>
+        <a href="mailto:support@factor.kz" class="value link">support@factor.kz</a>
+      </div>
+
     </div>
   </div>
 
@@ -55,7 +64,8 @@
     ymaps.ready(()=>{
       map = new ymaps.Map("map", {
         center: [51.135751, 71.433494],
-        zoom: 16
+        zoom: 16,
+        controls: ['zoomControl', 'typeSelector',  'fullscreenControl']
       });
 
       placemark = new ymaps.Placemark(
@@ -65,6 +75,7 @@
       });
 
       map.geoObjects.add(placemark);
+      map.behaviors.disable('scrollZoom');
     });
   </script>
 </div>

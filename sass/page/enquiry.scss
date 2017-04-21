@@ -54,17 +54,33 @@ $font-serif   : "MerriWeather", serif;
 
     .block {
       background: $transparent;
-      color: $blue;
+      color: $white;
       cursor: pointer;
       display: block;
       height: 100%;
       text-align: center;
       transition: .15s background, .6s color;
 
-      &:hover {
-        background: $blue;
-        color: $white;
+      &.faq {
+        background: $blue-l075;
+        &:hover { background: $blue; }
       }
+
+      &.manual {
+        background: $red-l075;
+        &:hover { background: $red; }
+      }
+
+      &.feedback {
+        background: $green-l075;
+        &:hover { background: $green; }
+      }
+
+      &.for-owners {
+        background: $orange-l075;
+        &:hover { background: $orange; }
+      }
+
     }
 
     .icon {
@@ -84,10 +100,93 @@ $font-serif   : "MerriWeather", serif;
       width: 70%;
     }
   }
+
+  .contact {
+    margin-bottom: 16px;
+
+    .key {
+      display: inline-block;
+      font-weight: 500;
+      text-align: left;
+      width: 80px;
+    }
+
+    .value {
+      display: inline-block;
+      text-align: left;
+      width: 240px;
+
+      &.link {
+        color: $blue;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+
+
+  .manual {
+
+    .block {
+      background: $white-d075;
+      border: 1px solid $white-d15;
+      display: block;
+      padding: 16px 32px;
+      position: relative;
+      margin: 16px auto;
+
+      &:before {
+        border-right: 30px solid transparent;
+        border-top: 30px solid $red-l15;
+        content: "";
+        display: block;
+        height: 0;
+        left: -1px;
+        position: absolute;
+        top: -1px;
+        width: 0;
+      }
+    }
+
+    .link {
+      color: $black;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .description {
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
 }
 
 #map {
+  background: $white-d15;
   display: block;
   height: 400px;
   margin: 32px auto 0 auto;
+  position: relative;
+
+  &:before {
+    bottom: 0;
+    color: $black-l30;
+    content: "Мы на карте";
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    left: 0;
+    padding-top: 170px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
 }
