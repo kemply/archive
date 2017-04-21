@@ -1,6 +1,8 @@
 #header {
   background: $black;
+  position: relative;
   width: 100%;
+  z-index: 3;
 
   .lang-dropdown {
     box-shadow: 0 0 0 $transparent;

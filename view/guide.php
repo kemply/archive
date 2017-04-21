@@ -1,8 +1,10 @@
 <link href="/compiler.php/page/guide.scss?time=<?php echo (int) microtime(true); ?>" rel="stylesheet" type="text/css" />
 
 <div id="guide">
-  <div class="banner">
-    <img class="img" src="" />
+  <div id="banner" class="banner">
+    <img class="img" src="/img/banner.jpg" />
+    <h2 class="name">Архив чего-то там им. кого-то</h2>
+    <span class="description">Документы про КазССР, текущую политику, экономику социальное положение и НЛО</span>
   </div>
 
   <div class="content row">

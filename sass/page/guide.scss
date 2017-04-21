@@ -11,6 +11,46 @@ $font-serif   : "MerriWeather", serif;
 #guide {
   margin: 0 auto 15px auto;
 
+  .banner {
+    background: $black;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .img {
+      margin: -5px;
+      opacity: .5;
+      width: calc(100% + 10px);
+
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+    }
+
+    .name {
+      color: $white-d075;
+      text-shadow: 0 0 3px $black-l30;
+      font-size: 40px;
+      font-weight: 500;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 30%;
+      text-align: center;
+    }
+
+    .description {
+      color: $white-d075;
+      text-shadow: 0 0 3px $black-l30;
+      font-size: 24px;
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 40%;
+      text-align: center;
+    }
+  }
+
   .title {
     font-size: 28px;
     font-weight: 400;
@@ -41,6 +81,7 @@ $font-serif   : "MerriWeather", serif;
   }
 
   .document {
+    position: relative;
     margin-top: 64px;
 
     .h2 {
@@ -105,16 +146,12 @@ $font-serif   : "MerriWeather", serif;
       background: $white-d075;
       border: 1px solid $white-d30;
       border-right: none;
-      bottom: 190px;
       overflow: auto;
       padding: 16px;
       position: fixed;
-      top: 190px;
+      top: 0;
 
-      &.absolute {
-        bottom: 20px;
-        position: absolute;
-      }
+      &.absolute { position: absolute; }
 
       &.fixed {
         position: fixed;
@@ -143,7 +180,6 @@ $font-serif   : "MerriWeather", serif;
 
     .page {
       margin-bottom: 16px;
-      max-height: 500px;
       padding: 0 16px;
     }
   }

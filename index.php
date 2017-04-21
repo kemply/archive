@@ -37,7 +37,7 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
 
     <link href="/compiler.php/ui.scss?time=<?php echo (int) microtime(true); ?>" rel="stylesheet" type="text/css" />
     <!-- <link href="//file.myfontastic.com/ABA5yUrw93ntWVEnGgxxn4/icons.css" rel="stylesheet" type="text/css" /> -->

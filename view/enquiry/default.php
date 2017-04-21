@@ -27,7 +27,7 @@
   <div class="card col-1 row-1">
     <a href="/enquiry/for-owners" class="block for-owners">
       <i class="icon icon-winrar"></i>
-      <span class="name">Информация для владельцев фондов</span>
+      <span class="name">Информация для фондообразовательей</span>
     </a>
   </div>
 </div>

@@ -28,7 +28,7 @@
   ?>
 
   <div class="content row">
-    <h2 class="title small col-3"><span class="text">Конакты</span></h2>
+    <h2 class="title small col-3"><span class="text">Контакты</span></h2>
   </div>
 
   <div class="row center">
