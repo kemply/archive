@@ -1,0 +1,43 @@
+&.checkbox {
+  cursor: pointer;
+  overflow: hidden;
+
+  .text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .box {
+    background: $white;
+    border: 1px solid $blue;
+    box-shadow: 0 0 0 $black-t15;
+    display: inline-block;
+    float: right;
+    height: 20px;
+    margin: 0 8px;
+    padding-top: 1px;
+    text-align: center;
+    transition: 0.15s all;
+    vertical-align: middle;
+    width: 20px;
+
+    @include border-radius(2px);
+
+    .icon {
+      color: $white;
+      opacity: 0;
+      transition: .15s all;
+    }
+  }
+
+  .input {
+    display: none;
+
+    &:checked ~ .box {
+      background: $blue;
+      box-shadow: 0 0 2px $black-t15;
+
+      .icon { opacity: 1; }
+    }
+  }
+}

@@ -10,6 +10,8 @@
 @import "style/header";
 @import "style/footer";
 
+@import "modal";
+
 
 /********* Begin Style *********/
 
@@ -34,55 +36,14 @@
 	}
 
 
+	@import "inc/ui/select";
+	@import "inc/ui/button";
+
 	.label {
-		display: inline-block;
+		display: block;
 		position: relative;
-		vertical-align: middle;
 
-		.input {
-
-			&.checkbox{
-				display: none;
-
-				~ .slider {
-					background: $white;
-					cursor: pointer;
-					height: 25px;
-					position: absolute;
-					top: 0;
-					transition: .15s all;
-					width: 50px;
-					z-index: 1;
-
-					@include border-radius(50px);
-				}
-
-				~ .point {
-					background: $blue-l15;
-					box-shadow: 0 0 3px transparentize($black, 0.7);
-					cursor: pointer;
-					display: block;
-					height: 25px;
-					left: 0;
-					position: relative;
-					transition: .15s all;
-					width: 25px;
-					z-index: 2;
-
-					@include border-radius(50%);
-				}
-
-				&:checked ~ {
-
-					.slider {
-						background: $blue-l15;
-					}
-
-					.point {
-						background: $blue;
-						left: 25px;
-					}
-				}
-			}
-		}
+		@import "inc/ui/label/text";
+		@import "inc/ui/label/checkbox";
+		@import "inc/ui/label/range";
 	}

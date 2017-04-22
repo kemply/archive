@@ -49,7 +49,7 @@ $font-serif   : "MerriWeather", serif;
       font-size: 24px;
       position: absolute;
       right: 16px;
-      top: 1.2em;
+      top: -.14em;
       transition: .15s all;
     }
 
@@ -70,55 +70,111 @@ $font-serif   : "MerriWeather", serif;
     }
   }
 
-  .tabs-and-filters, .blocks {
-    margin-bottom: 0;
-    padding: 0;
-    position: relative;
-    z-index: 2;
-  }
+  .filters {
+    padding-right: 8px;
+    vertical-align: top;
 
-  .blocks {
-    z-index: 1;
-    margin-top: -1px;
-  }
+    .block {
+      background: $white-d075;
+      border: 1px solid $white-d15;
+      padding: 16px;
 
-  .tab {
-    background: $white-d15;
-    border-bottom: 1px solid $blue;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 16px 32px;
+      .tabs {
+        border-bottom: 1px solid $white-d30;
 
-    &.active {
-      background: $white;
-      border: 1px solid $blue;
-      border-bottom: none;
-      position: relative;
-      top: 1px;
+        .tab {
+          background: $transparent;
+          color: $blue;
+          cursor: pointer;
+          display: block;
+          margin: 4px 0;
+          padding: 8px 16px;
+          transition: .15s all;
+
+          &:hover {
+            background: $blue-t15;
+          }
+
+          &.active {
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+
+      .h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 16px 0;
+      }
+
+      .option {
+        margin: 16px 0;
+      }
+
+      .text {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 16px;
+        vertical-align: middle;
+
+        &.top {
+          cursor: default;
+          padding-top: 8px;
+        }
+      }
+
+      .select-box {
+        float: right;
+      }
     }
   }
 
-  .block {
-    background: $white;
-    border: 1px solid $blue;
-    min-height: 600px;
-    padding: 16px;
-  }
+  .list {
+    padding-left: 8px;
+    vertical-align: top;
 
-  .preloader {
-    background: RGBA(0, 0, 0, .5);
-    border: none;
-    bottom: 1px;
-    cursor: progress;
-    display: block;
-    left: 1px;
-    outline: none;
-    position: absolute;
-    top: 1px;
-    width: calc(100% - 2px);
+    .table {
+      border: 1px solid $white-d15;
+      border-spacing: 0;
+      margin: 16px 0;
+      width: 100%;
 
-    .img {
-      width: 250px;
+      .body {
+        background: $white-d075;
+      }
+
+      .td {
+        border-bottom: 2px solid $white;
+      }
+
+      .th, .td {
+        padding: 8px;
+        text-align: left;
+        &:first-child { border-left: none; }
+
+        &.id {
+          text-align: center;
+          width: 80px;
+        }
+        &.begin, &.end {
+          text-align: center;
+          width: 125px;
+        }
+
+        &.detail {
+          text-align: center;
+          width: 200px;
+        }
+      }
+
+      .th {
+        border-color: $white-d075;
+        border-bottom: 3px solid $black-t15;
+        padding-bottom: 16px;
+        padding-top: 16px;
+      }
     }
   }
+
 }

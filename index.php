@@ -52,7 +52,11 @@
       require 'inc/content.php';
 
       require 'view/footer.php';
+
+      require 'view/modal/sign-up.php';
+      require 'view/modal/sign-in.php';
     ?>
+    <script src="js/ui.js"></script>
   </body>
 </html>
 

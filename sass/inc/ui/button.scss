@@ -1,0 +1,16 @@
+.button {
+  background: $white;
+  border: 1px solid $black;
+  color: $black;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 8px auto;
+  padding: 8px;
+  transition: .15s all;
+  width: 100%;
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}

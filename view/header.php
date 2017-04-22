@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="logo line col-1">
-      <a href="" class="text">logotype</a>
+      <a href="/" class="text">logotype</a>
     </div>
 
     <nav class="nav line col-1">
@@ -13,8 +13,8 @@
 
     <div class="navigation line col-2">
       <div class="login-link">
-        <a href="/sign-up" class="text sign-up">Регистрация</a>
-        <a href="/sign-in" class="text sign-in">Войти</a>
+        <span class="text sign-up" onclick="modal.open('sign-up')">Регистрация</span>
+        <span class="text sign-in" onclick="modal.open('sign-in')">Войти</span>
       </div>
 
       <div class="lang-dropdown">

@@ -1,0 +1,13 @@
+.select {
+  background: $white;
+  border: 1px solid $white-d15;
+  cursor: pointer;
+  display: block;
+  padding: 8px 16px;
+  transition: .15s all;
+  width: 100%;
+
+  &:hover, &:focus {
+    border-color: $white-d30;
+  }
+}

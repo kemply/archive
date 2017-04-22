@@ -1,0 +1,72 @@
+@mixin range-track(){
+  background: $white;
+  border: 0px solid #010101;
+  box-shadow: 0 0 1px $white-d30;
+  cursor: pointer;
+  height: 18px;
+  width: 100%;
+}
+
+@mixin range-thumb(){
+  background: $blue;
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
+  border-radius: 3px;
+  box-shadow: none;
+  cursor: pointer;
+  height: 16px;
+  width: 18px;
+}
+
+@mixin range-ms-fill(){
+  background: $white;
+}
+
+&.range {
+
+  .text {
+    display: inline-block;
+    padding: 8px 0;
+  }
+
+  .input {
+
+    &.num {
+      border: 1px solid $white-d15;
+      display: inline-block;
+      float: right;
+      font-size: 16px;
+      padding: 8px 0 8px 16px;
+      width: 80px;
+    }
+
+    &.ran {
+      display: block;
+      margin: 8px 0;
+      width: 100%;
+      -webkit-appearance: none;
+
+      &::-ms-track {@include range-track(); }
+      &::-ms-fill-lower { @include range-track(); }
+      &::-ms-fill-upper { @include range-track(); }
+      &::-moz-range-track { @include range-track(); }
+      &::-webkit-slider-runnable-track { @include range-track(); }
+
+      &::-ms-thumb { @include range-thumb(); }
+      &::-moz-range-thumb { @include range-thumb(); }
+      &::-webkit-slider-thumb {
+        @include range-thumb();
+        margin-top: 1px;
+        -webkit-appearance: none;
+      }
+
+      &:focus {
+        outline: none;
+
+        &::-ms-fill-upper { @include range-ms-fill(); }
+        &::-ms-fill-lower { @include range-ms-fill(); }
+        &::-webkit-slider-runnable-track { @include range-ms-fill(); }
+      }
+    }
+  }
+}
