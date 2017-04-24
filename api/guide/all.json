@@ -1,11 +1,14 @@
 [
-  { "url" : "/api/guide/1.json" },
-  { "url" : "/api/guide/2.json" },
-  { "url" : "/api/guide/3.json" },
-  { "url" : "/api/guide/4.json" },
-  { "url" : "/api/guide/5.json" },
-  { "url" : "/api/guide/6.json" },
-  { "url" : "/api/guide/7.json" },
-  { "url" : "/api/guide/8.json" },
-  { "url" : "/api/guide/9.json" }
+  {"url":"/api/guide/Doc.1.1.json"},
+  {"url":"/api/guide/Doc.4.3.json"},
+  {"url":"/api/guide/Doc.4.4.json"},
+  {"url":"/api/guide/Doc.5.1.json"},
+  {"url":"/api/guide/Doc.5.2.json"},
+  {"url":"/api/guide/Doc.5.3.json"},
+  {"url":"/api/guide/Doc.5.4.json"},
+  {"url":"/api/guide/Doc.6.1.json"},
+  {"url":"/api/guide/Doc.6.2.json"},
+  {"url":"/api/guide/Doc.6.3.json"},
+  {"url":"/api/guide/Doc.6.4.json"},
+  {"url":"/api/guide/Doc.6.5.json"}
 ]

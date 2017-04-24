@@ -40,9 +40,10 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
 
     <link href="/compiler.php/ui.scss?time=<?php echo (int) microtime(true); ?>" rel="stylesheet" type="text/css" />
-    <!-- <link href="//file.myfontastic.com/ABA5yUrw93ntWVEnGgxxn4/icons.css" rel="stylesheet" type="text/css" /> -->
+    <link href="//file.myfontastic.com/ABA5yUrw93ntWVEnGgxxn4/icons.css" rel="stylesheet" type="text/css" />
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="/js/ui.js"></script>
   </head>
   <body id="body">
     <?php
@@ -56,7 +57,6 @@
       require 'view/modal/sign-up.php';
       require 'view/modal/sign-in.php';
     ?>
-    <script src="js/ui.js"></script>
   </body>
 </html>
 

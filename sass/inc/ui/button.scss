@@ -9,6 +9,12 @@
   transition: .15s all;
   width: 100%;
 
+  .icon {
+    position: relative;
+    margin: 0 5px;
+    top: 2px;
+  }
+
   &:hover {
     background: $black;
     color: $white;

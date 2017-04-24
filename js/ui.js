@@ -50,5 +50,5 @@
     return this.close(id);
   }
 
-  window.modal = modal;
+  window.modal  = modal;
 })();

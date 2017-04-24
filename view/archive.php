@@ -22,8 +22,8 @@
       <div class="block">
         <div class="tabs">
           <a href="/archive/funds" class="tab active">Фонды</a>
-          <a href="/archive/funds" class="tab">Описи</a>
-          <a href="/archive/funds" class="tab">Дела</a>
+          <a href="/archive/registers" class="tab">Описи</a>
+          <a href="/archive/cases" class="tab">Дела</a>
         </div>
 
         <div class="option">
@@ -95,6 +95,16 @@
           <?php } ?>
         </tbody>
       </table>
+      <div class="pagination">
+        <button class="first go disabled"><<</button>
+        <button class="number go active">1</button>
+        <button class="number go">2</button>
+        <button class="number go">3</button>
+        <button class="number go">4</button>
+        <button class="number go disabled">...</button>
+        <button class="number go">30</button>
+        <button class="last go">>></button>
+      </div>
     </div>
   </div>
 </div>

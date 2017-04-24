@@ -44,6 +44,96 @@
 		position: relative;
 
 		@import "inc/ui/label/text";
+		@import "inc/ui/label/textarea";
 		@import "inc/ui/label/checkbox";
 		@import "inc/ui/label/range";
+	}
+
+	.pagination {
+		display: block;
+
+		.go {
+			background: $white-d075;
+			border: 1px solid $white-d15;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 16px;
+			margin: 0 3px;
+			padding: 8px 16px;
+			transition: .15s all;
+			vertical-align: middle;
+
+			&:hover {
+				background: $white-d15;
+			}
+
+			&.active {
+				background: $blue-l15;
+				border-color: $blue-l075;
+				cursor: default;
+			}
+
+			&.disabled {
+				background: $white-d075;
+				color: $white-d30;
+				cursor: default;
+			}
+		}
+
+		.first {
+			margin-left: 0;
+		}
+
+		.first {
+			margin-right: 0;
+		}
+	}
+
+
+	.table {
+		border: 1px solid $white-d15;
+		border-spacing: 0;
+		margin: 16px 0;
+		width: 100%;
+
+		.body {
+			background: $white-d075;
+		}
+
+		.td {
+			border-bottom: 2px solid $white;
+		}
+
+		.th, .td {
+			border-left: 2px solid $white;
+			padding: 8px;
+			text-align: left;
+			&:first-child { border-left: none; }
+
+			&.id {
+				text-align: center;
+				width: 80px;
+			}
+			&.begin, &.end {
+				text-align: center;
+				width: 125px;
+			}
+
+			&.detail {
+				text-align: center;
+				width: 200px;
+			}
+		}
+
+		.th {
+			border-color: $white-d075;
+			border-bottom: 3px solid $black-t15;
+			font-weight: 500;
+			padding-bottom: 16px;
+			padding-top: 16px;
+		}
+
+		.bold {
+			font-weight: 500;
+		}
 	}

@@ -18,7 +18,7 @@
       break;
 
       case 'for-owners':
-        require '/view/enquiry/for-owners.php';
+        require 'view/enquiry/for-owners.php';
       break;
 
       default:

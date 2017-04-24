@@ -151,6 +151,7 @@ $font-serif   : "MerriWeather", serif;
 
     .link {
       color: $black;
+      cursor: pointer;
       display: block;
       font-size: 18px;
       font-weight: 500;
@@ -163,6 +164,66 @@ $font-serif   : "MerriWeather", serif;
     .description {
       display: block;
       margin-bottom: 4px;
+    }
+  }
+
+
+  .faq {
+
+    .block {
+      background: $white-d075;
+      border: 1px solid $white-d15;
+      display: block;
+      padding: 16px 32px;
+      position: relative;
+      margin: 16px auto;
+
+      &:before {
+        border-right: 30px solid transparent;
+        border-top: 30px solid $blue-l15;
+        content: "";
+        display: block;
+        height: 0;
+        left: -1px;
+        position: absolute;
+        top: -1px;
+        width: 0;
+      }
+
+    }
+    .link {
+      color: $black;
+      cursor: pointer;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 0;
+
+      .span {
+        display: inline-block;
+        border-bottom: 1px dashed $transparent;
+        transition: .15s all;
+      }
+
+      &:hover .span {
+        border-color: $black;
+      }
+    }
+
+    .description {
+      display: block;
+      margin-bottom: 4px;
+      overflow: hidden;
+      max-height: 0;
+      transition: .15s all;
+    }
+
+    .input {
+      display: none;
+
+      &:checked ~ .description {
+        max-height: 500px;
+      }
     }
   }
 }

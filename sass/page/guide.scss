@@ -110,11 +110,6 @@ $font-serif   : "MerriWeather", serif;
       font-size: 16px;
       font-weight: 400;
       margin: 8px 0;
-      &:before {
-        content: '';
-        display: inline;
-        padding: 0 8px;
-      }
     }
 
     .italic {
@@ -124,7 +119,16 @@ $font-serif   : "MerriWeather", serif;
     }
 
     .center { text-align: center; }
-    .justify { text-align: justify; }
+
+    .justify {
+      text-align: justify;
+      &:before {
+        content: '';
+        display: inline;
+        padding: 0 8px;
+      }
+    }
+
     .left {
       text-align: left;
 
@@ -133,6 +137,7 @@ $font-serif   : "MerriWeather", serif;
         width: 60%
       }
     }
+    
     .right {
       text-align: right;
 
@@ -164,6 +169,7 @@ $font-serif   : "MerriWeather", serif;
 
       .link {
         color: $black;
+        cursor: pointer;
         display: block;
         margin: 8px 0;
         &:hover {

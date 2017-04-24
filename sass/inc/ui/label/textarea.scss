@@ -1,0 +1,29 @@
+&.textarea {
+  margin: 8px auto;
+
+  .icon {
+    color: $black-l30;
+    font-size: 16px;
+    left: 8px;
+    position: absolute;
+    top: .6em;
+    transition: .15s all;
+  }
+
+  .input {
+    border: 1px solid $white-d15;
+    font-size: 16px;
+    min-height: 150px;
+    padding: 8px 8px 8px 32px;
+    transition: .15s all;
+    width: 100%;
+
+    &:hover, &:focus {
+      border-color: $white-d30;
+
+      ~ .icon {
+        color: $black-l15;
+      }
+    }
+  }
+}
